@@ -61,7 +61,7 @@ our %format = do {
   my @pdf_param  = (
     device      => 'pdfwrite',
     extension   => 'pdf',
-    format_code => [qw(-c .setpdfwrite)],
+    format_code => [-c => '3000000 setvmthreshold'],
     'format_param' # => VALUE
   );
 
